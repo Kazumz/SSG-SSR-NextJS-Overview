@@ -28,7 +28,7 @@ In most cases when developing modern SPA's, you simply do not need to go further
 ![Client Side Rendering](https://miro.medium.com/max/700/1*CRiH0hUGoS3aoZaIY4H2yg.png)
 - Download HTML, CSS, and JavaScript bundles.
 - User is shown the default index.html "You must use JavaScript to view this Website" page.
-- The default page is overwritten by the index.js(ts) ReactDOM.Render() and any child components.
+- The default page is immediately overwritten by the index.js(ts) ReactDOM.Render() and any child components. This happens syncronously.
 
 ## Credits
 https://medium.com/walmartglobaltech/the-benefits-of-server-side-rendering-over-client-side-rendering-5d07ff2cefe8#:~:text=The%20main%20difference%20is%20that,with%20links%20to%20your%20javascript.

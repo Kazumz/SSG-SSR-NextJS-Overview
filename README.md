@@ -43,6 +43,8 @@ Next is a modern server based framework that runs inside of Node.js and serves u
 ### Static Site Generation
 The beauty of SSG is what happens when you build your application. Whereas with CSR the JavaScript is downloaded and then HTML is rendered to the DOM, with SSG this happens at build time. How mind blowing is that?! The component that you wrote in React that just contains some JSX and is stateless is now forever a static HTML page served up over and over. The user's machine never needs to render this page out itself, it's served up from the server as plain old HTML. In theory, there was little to no work that the user's browser had to perform to display this page. 
 
+A great way to think about SSG is that when you build your application, a "preview" is generated for that component. The user is shown the "preview" for that component, before React kicks in and reconciles it in the client to determine if there's anything additional to do now that we're in the user's browser as you're not able to do everything you need to do server side such as accessing some browser based API's.
+
 With a framework like Next, this is how all of the React components are built. SSR is mearly an addition to this.
 
 ### Server Side Rendering

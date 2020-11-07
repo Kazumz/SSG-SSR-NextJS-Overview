@@ -13,7 +13,7 @@ It's as simple as that. However over the years since the inception of the intern
 
 Due to the way SPA's (Single-page applications) work, the JavaScript that the user has to download when visiting your website increases dramatically. Whereas with a non-SPA application you'd be downloading large lumps of already constructed HTML when navigating between pages from the server, in an SPA you'll be downloading large lumps of JavaScript that dynamically creates HTML and writes that to the DOM for you instead. This means that not only do you now have to download a large amount of JavaScript, your browser also has to run the JavaScript and write the output of that to the DOM. It can be far more intensive than simply downloading an already constructed HTML page. 
 
-Much of what the server used to do for you, where the horsepower is, is now happening in the user's browser. As an example, with an Razor / MVC application, you'd perform your intensive calculations client side and return a View (HTML). All the user's browser then needs to do is display it.
+Much of what the server used to do for you, where the horsepower is, is now happening in the user's browser. As an example, with an Razor / MVC application, you'd perform your intensive calculations server side and return a View (HTML). All the user's browser then needs to do is display it.
 
 For the rest of this overview, we'll be focusing on React which is a library for creating SPA's.
 

@@ -31,17 +31,27 @@ In most cases when developing modern SPA's, you simply do not need to go further
 - The default page is immediately overwritten by the index.js(ts) ReactDOM.Render() and any child components. This happens syncronously.
 
 ## Static Site Generation and Server Side Rendering
-The difficult thing understanding these two topics is the layers of abstraction introduced by frameworks that try to solve the aforementioned issues with CSR.
+The difficult thing understanding these two topics is the layers of abstraction introduced by frameworks that try to solve the aforementioned issues with CSR. This is also where things become far more complex than developing against standalone React as a library in the client vs frameworks that integrate React in the server. You must choose wisely for your use case. Using this approach shouldn't be taken lightly as a decision.
 
-### Node.js
-https://nodejs.org/
-
-...
+I'll use Next.js as an example of utilising SSG and SSR here. Next.js is something I'm interested in as a framework for solving the issues with CSR and reminds me of a server equivalent of CRA. It also follows similar concepts of Razor/MVC.
 
 ### Next.js
 https://nextjs.org/
 
-...
+Next is a modern server based framework that runs inside of Node.js and serves up React based content.
+
+### Static Site Generation
+The beauty of SSG is what happens when you build your application. Whereas with CSR the JavaScript is downloaded and then HTML is rendered to the DOM, with SSG this happens at build time. How mind blowing is that?! The component that you wrote in React that just contains some JSX and is stateless is now forever a static HTML page served up over and over. The user's machine never needs to render this page out itself, it's served up from the server as plain old HTML. In theory, there was little to no work that the user's browser had to perform to display this page. 
+
+With a framework like Next, this is how all of the React components are built. SSR is mearly an addition to this.
+
+### Server Side Rendering
+In addition to SSG, we may not always want to serve up static HTML to a user, we may want to calculate something at request time. When a request for the page hits the Node server and ultimately our Next application, we have the ability to intercept and re-render the page that's about to be given and displayed to the user using SSR. This is more intensive for the server, but the benefit of this is that we can easily scale our server which is something we're not able to do with a user's browser.
+
+### How does state and re-renders work?
+
+### What happens when someone visits a SSG/SSR React application?
+![Server Side Rendering](https://miro.medium.com/max/700/1*jJkEQpgZ8waQ5P-W5lhxuQ.png)
 
 ## Credits
 https://medium.com/@lexgrigoryan

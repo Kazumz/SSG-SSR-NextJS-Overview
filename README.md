@@ -59,7 +59,7 @@ As with SSG, React will still perform reconciliation when in the browser as you 
 - React reconciliation, writing any additional HTML to the DOM if required.
 
 ## Conclusion
-Pick wisely, using server side frameworks like Next.js is much more complex than CSR and a CRA setup. Is it worth your time and the additional overhead? Many web applications out there are not intensive enough to justify using Next or SSG/SSR and will get little to no benefit.
+Pick wisely, using server side frameworks like Next.js is much more complex than CSR and a CRA setup. Is it worth your time and the additional overhead? Many web applications out there are not intensive enough to justify using Next or SSG/SSR and will get little to no benefit with all of the extra complexity.
 
 Fundamentally, the only reason to use a server side framework like Next.js are:
 - Intensive calculations can happen server side.

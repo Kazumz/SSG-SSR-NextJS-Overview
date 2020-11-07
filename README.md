@@ -31,7 +31,7 @@ In most cases when developing modern SPA's, you simply do not need to go further
 - The default page is immediately overwritten by the index.js(ts) ReactDOM.Render() and any child components. This happens syncronously.
 
 ## Static Site Generation and Server Side Rendering
-The difficult thing understanding these two topics is the layers of abstraction introduced by frameworks that try to solve the aforementioned issues with CSR. This is also where things become far more complex than developing against standalone React as a library in the client vs frameworks that integrate React in the server. You must choose wisely for your use case. Using this approach shouldn't be taken lightly as a decision.
+The difficult thing understanding these two topics is the layers of abstraction introduced by frameworks that try to solve the aforementioned issues with CSR. This is also where things become far more complex than developing against standalone React as a library in the client vs frameworks that integrate React in the server. Your server is no longer serving up HTML, JavaScript bundles etc; it's actually performing logic in the server using this approach as well as serving up HTML and JavaScript bundles.
 
 I'll use Next.js as an example of utilising SSG and SSR here. Next.js is something I'm interested in as a framework for solving the issues with CSR and reminds me of a server equivalent of CRA. It also follows similar concepts of Razor/MVC.
 

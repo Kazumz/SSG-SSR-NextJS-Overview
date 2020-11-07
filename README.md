@@ -17,6 +17,7 @@ For the rest of this overview, we'll be focusing on React which is a library for
 
 ### Create React App
 (https://create-react-app.dev/docs/getting-started/)
+
 Create React App (CRA) is a great template for getting up and running with React fast. React in itself is NOT a framework, it is a library. CRA as a template does not take that away from you, it simply abstracts the setup from you and provides you with a good simple base for your new React application.
 
 In most cases when developing modern SPA's, you simply do not need to go further than Create React App. As React is a libary and not a framework, it by default is executed in a CSR manner. The user downloads the JavaScript bundles containing your React logic when visiting your website, React kicks in, your DOM is written to. 

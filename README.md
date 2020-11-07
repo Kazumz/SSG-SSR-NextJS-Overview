@@ -31,4 +31,4 @@ In most cases when developing modern SPA's, you simply do not need to go further
 - The default page is immediately overwritten by the index.js(ts) ReactDOM.Render() and any child components. This happens syncronously.
 
 ## Credits
-https://medium.com/walmartglobaltech/the-benefits-of-server-side-rendering-over-client-side-rendering-5d07ff2cefe8#:~:text=The%20main%20difference%20is%20that,with%20links%20to%20your%20javascript.
+https://medium.com/@lexgrigoryan

@@ -24,11 +24,24 @@ Create React App (CRA) is a great template for getting up and running with React
 
 In most cases when developing modern SPA's, you simply do not need to go further than Create React App. As React is a libary and not a framework, it by default is executed in a CSR manner. The user downloads the JavaScript bundles containing your React logic when visiting your website, React kicks in, your DOM is written to. 
 
-### What happens with someone visits a website?
+### What happens with someone visits a CSR React application?
 ![Client Side Rendering](https://miro.medium.com/max/700/1*CRiH0hUGoS3aoZaIY4H2yg.png)
 - Download HTML, CSS, and JavaScript bundles.
 - User is shown the default index.html "You must use JavaScript to view this Website" page.
 - The default page is immediately overwritten by the index.js(ts) ReactDOM.Render() and any child components. This happens syncronously.
+
+## Static Site Generation and Server Side Rendering
+The difficult thing understanding these two topics is the layers of abstraction introduced by frameworks that try to solve the aforementioned issues with CSR.
+
+### Node.js
+https://nodejs.org/
+
+...
+
+### Next.js
+https://nextjs.org/
+
+...
 
 ## Credits
 https://medium.com/@lexgrigoryan

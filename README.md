@@ -63,7 +63,7 @@ Pick wisely, using server side frameworks like Next.js is much more complex than
 
 Fundamentally, the only reason to use a server side framework like Next.js are:
 - Intensive calculations can happen server side.
-- The user will see the page content earlier as we do not need to wait to download the JavaScript bundles. However, this can be mitigated by lots of approaches using CSR and may not actually make a difference if your components are constructed in a way that they rely on browser API's.
+- The user will see the page content earlier as we do not need to wait to download the JavaScript bundles. However, this can be mitigated by alternative approaches using CSR and may not actually make a difference if your components are constructed in a way that they rely on browser API's. You still need to show some sort of visual loading affordance.
 
 ## Credits
 https://medium.com/@lexgrigoryan
